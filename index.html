@@ -353,7 +353,7 @@
             codeReader.getVideoInputDevices()
                 .then((videoInputDevices) => {
                     const sourceSelect = document.getElementById('sourceSelect')
-                    selectedDeviceId = videoInputDevices[0].deviceId // videoInputDevices[1].deviceID = Rear Camera
+                    selectedDeviceId = videoInputDevices[1].deviceId // Forces Rear Camera
                     if (videoInputDevices.length >= 1) {
                         videoInputDevices.forEach((element) => {
                             const sourceOption = document.createElement('option')
